@@ -1,0 +1,660 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0814017F7B5D9CFECFA7355E2DE1C8BD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592C57A6074B39DF59270F72BF0279D /* User.swift */; };
+		12C946EABDF7F0CBF7A13E41365CBCF4 /* Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B189F803BD7320A623714692D1DA0F /* Program.swift */; };
+		1772E2C3249D6206AA519AFBF41D429F /* SearchRecordsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870584A91B0CDF37263DD95AFA927302 /* SearchRecordsResponse.swift */; };
+		304358640583D70B178824C74E5C9EEA /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D94D97EC035F2B093FABF38D854EBF /* Channel.swift */; };
+		385B470B4BDA60E69EE14FEE24C9930D /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95D1BE41BBBEAC07CA4806BDA40371B /* Episode.swift */; };
+		3BD049EDA8AD734F6AC6024A396E00CD /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB23A23265F038CC407517223A61446 /* Activity.swift */; };
+		3FD744E12CE691B22049600732C76397 /* MyWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93955DE121BDD825B75CCDA2E23C7BF /* MyWork.swift */; };
+		42ED5C8C2044099B5E6A2894DB88C705 /* Pods-annict4ios-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FB53C5C7EE3E556EBE9030F3E6805DD2 /* Pods-annict4ios-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BB5F6EF8917565494443647A714A569 /* AnnictAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B9BCB49AD92FA6844829F73FD70EDB /* AnnictAPIError.swift */; };
+		521CACFB4754AE8686BD96B9A7AC24AC /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4216FC00ACB9537F59A3FA98C6E119C /* Status.swift */; };
+		53FD7B50FD33061A893E6BDE5A3805EB /* Pods-annict4ios-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A61B8B401BD988330D3E681784B1F0 /* Pods-annict4ios-dummy.m */; };
+		56450EF9FD4946A7040DFF6552D9113E /* UpdateStatusResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D292A7D23BAB14F3CECF82E4661FAA93 /* UpdateStatusResponse.swift */; };
+		6359565E1A8AFAA7AC85DD29F273077E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		6730750733AC2A709279EA16522C7FF3 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71D17BEC77C9570BF826C06F22C9324 /* HTTPMethod.swift */; };
+		7CFDACE41A40FC363EE88C36DDE4424C /* SearchWorksResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2C60D46E9D53A1BC2BD68602E8B81F /* SearchWorksResponse.swift */; };
+		82958A51AD52693208D035944C761587 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8C5DE083773E5D8F35AF1B79B8E11F /* Record.swift */; };
+		840E1AE38EED2CF4134ADC6C52FC9773 /* AnnictAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D85056113AE7C0EFC729244E165050 /* AnnictAPI.swift */; };
+		85E62AD34133969D464D815C928868D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		912BDD16EFDBFA53A88C47F84376A220 /* CreateRecordResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B9BEC4978E989A884CFECE56AB3E75 /* CreateRecordResponse.swift */; };
+		9D35254110E6C2319FCE6BCC38EDBD05 /* SearchUsersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A0E16BA3244BB9BD20376272604A7E /* SearchUsersResponse.swift */; };
+		9E158185560B33181D79208DF92DC12A /* SearchMyWorksResponse .swift in Sources */ = {isa = PBXBuildFile; fileRef = 159C9567C5E8A32A3DBD49911AEF25D5 /* SearchMyWorksResponse .swift */; };
+		A5CCD2F575A0526E03FAA5510ADD2FD8 /* JSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3EDD2DEF83A0A4A0C6E85F2294AEB4 /* JSONDecodable.swift */; };
+		B1E53B05F32FFFEFC527CCD909685FDF /* SearchEpisodesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5DDB433F7D4662F15F6D59BED4635A /* SearchEpisodesResponse.swift */; };
+		CC2F6963CE0638C28CF35101CF6565EA /* SearchActivitiesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516DA615982306E3830F5EEA3758AC8A /* SearchActivitiesResponse.swift */; };
+		D618ABE78E506432239518DCA1A4AF56 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925662DBE3AE5902315B43BECC10CDAC /* Result.swift */; };
+		D96BAF888C7EB83CADD336AEB533AC57 /* AnnictClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77403A594C7F96029EC63A24F6AD3187 /* AnnictClientError.swift */; };
+		E4B7DCD3B0529B9FD15C84923F7173EC /* JSONDecodeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EEE7C18A3C1A8FF8A13D641B60DF52 /* JSONDecodeError.swift */; };
+		E4C5F5F1F269896610ABD779A153B8FA /* AnnictAPIClient-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F654B896C583FF09D69688BBE265B2 /* AnnictAPIClient-dummy.m */; };
+		E95989FE908301E2D2A9DB7210613272 /* AnnictClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B76434F8FFF0519A8D328D7DA94C17D /* AnnictClient.swift */; };
+		EA36253A8F1AF6DC31BD22F531119056 /* AnnictAPIClient-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B5C904FD8D7D28E0C2022038308019C4 /* AnnictAPIClient-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB9F7682A5CEDBE806A573FE9F1DF9DA /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B344C73C0E5CB701CC91E0045489D446 /* Profile.swift */; };
+		EF51D9AD0BAAE0F3C5F8868448A7B173 /* Work.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83945FF9E2914E15D21E01AEB4A81816 /* Work.swift */; };
+		F0107FC992EF9FE88A99058E54600DD4 /* SearchProgramResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24469025DADAE90B61187C985195D38E /* SearchProgramResponse.swift */; };
+		F6857F7EC948115D3865F11032672DAC /* AnnictRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9574AB01E1E683A040785077BE4C8783 /* AnnictRequest.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		21CD9ACBE7EB4FE6AAB7F5A3AEAF820C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8B495100FDEC46677F70266217DF986;
+			remoteInfo = AnnictAPIClient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		000BE2E4F26E1919B9E808FDFA9CF65A /* Pods-annict4ios-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-annict4ios-acknowledgements.markdown"; sourceTree = "<group>"; };
+		035D3644368960210236F748CAFFAF13 /* Pods-annict4ios-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-annict4ios-frameworks.sh"; sourceTree = "<group>"; };
+		08B9BEC4978E989A884CFECE56AB3E75 /* CreateRecordResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CreateRecordResponse.swift; path = AnnictAPIClient/CreateRecordResponse.swift; sourceTree = "<group>"; };
+		0F5DDB433F7D4662F15F6D59BED4635A /* SearchEpisodesResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SearchEpisodesResponse.swift; path = AnnictAPIClient/SearchEpisodesResponse.swift; sourceTree = "<group>"; };
+		10514B1CE852452006898D471917F945 /* Pods-annict4ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-annict4ios.debug.xcconfig"; sourceTree = "<group>"; };
+		126C4A8EF6BC7589496B9EF5066032C1 /* Pods-annict4ios-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-annict4ios-acknowledgements.plist"; sourceTree = "<group>"; };
+		1447DDA292735FE8ED6EE1E08D9D2395 /* AnnictAPIClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AnnictAPIClient.framework; path = AnnictAPIClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1592C57A6074B39DF59270F72BF0279D /* User.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = User.swift; path = AnnictAPIClient/User.swift; sourceTree = "<group>"; };
+		159C9567C5E8A32A3DBD49911AEF25D5 /* SearchMyWorksResponse .swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SearchMyWorksResponse .swift"; path = "AnnictAPIClient/SearchMyWorksResponse .swift"; sourceTree = "<group>"; };
+		1B76434F8FFF0519A8D328D7DA94C17D /* AnnictClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnnictClient.swift; path = AnnictAPIClient/AnnictClient.swift; sourceTree = "<group>"; };
+		24469025DADAE90B61187C985195D38E /* SearchProgramResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SearchProgramResponse.swift; path = AnnictAPIClient/SearchProgramResponse.swift; sourceTree = "<group>"; };
+		3A2C60D46E9D53A1BC2BD68602E8B81F /* SearchWorksResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SearchWorksResponse.swift; path = AnnictAPIClient/SearchWorksResponse.swift; sourceTree = "<group>"; };
+		4D8C5DE083773E5D8F35AF1B79B8E11F /* Record.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Record.swift; path = AnnictAPIClient/Record.swift; sourceTree = "<group>"; };
+		516DA615982306E3830F5EEA3758AC8A /* SearchActivitiesResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SearchActivitiesResponse.swift; path = AnnictAPIClient/SearchActivitiesResponse.swift; sourceTree = "<group>"; };
+		54B189F803BD7320A623714692D1DA0F /* Program.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Program.swift; path = AnnictAPIClient/Program.swift; sourceTree = "<group>"; };
+		63A0E16BA3244BB9BD20376272604A7E /* SearchUsersResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SearchUsersResponse.swift; path = AnnictAPIClient/SearchUsersResponse.swift; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		75EE93EEA53897562836595BBEE74888 /* AnnictAPIClient.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AnnictAPIClient.xcconfig; sourceTree = "<group>"; };
+		77403A594C7F96029EC63A24F6AD3187 /* AnnictClientError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnnictClientError.swift; path = AnnictAPIClient/AnnictClientError.swift; sourceTree = "<group>"; };
+		83945FF9E2914E15D21E01AEB4A81816 /* Work.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Work.swift; path = AnnictAPIClient/Work.swift; sourceTree = "<group>"; };
+		85D85056113AE7C0EFC729244E165050 /* AnnictAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnnictAPI.swift; path = AnnictAPIClient/AnnictAPI.swift; sourceTree = "<group>"; };
+		85EEE7C18A3C1A8FF8A13D641B60DF52 /* JSONDecodeError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONDecodeError.swift; path = AnnictAPIClient/JSONDecodeError.swift; sourceTree = "<group>"; };
+		86D94D97EC035F2B093FABF38D854EBF /* Channel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Channel.swift; path = AnnictAPIClient/Channel.swift; sourceTree = "<group>"; };
+		870584A91B0CDF37263DD95AFA927302 /* SearchRecordsResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SearchRecordsResponse.swift; path = AnnictAPIClient/SearchRecordsResponse.swift; sourceTree = "<group>"; };
+		8E1ED06473515264A219290F182B25F2 /* AnnictAPIClient-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AnnictAPIClient-prefix.pch"; sourceTree = "<group>"; };
+		925662DBE3AE5902315B43BECC10CDAC /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = AnnictAPIClient/Result.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9574AB01E1E683A040785077BE4C8783 /* AnnictRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnnictRequest.swift; path = AnnictAPIClient/AnnictRequest.swift; sourceTree = "<group>"; };
+		96B28CCFFA626A94D015E52112134B11 /* Pods_annict4ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_annict4ios.framework; path = "Pods-annict4ios.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1A61B8B401BD988330D3E681784B1F0 /* Pods-annict4ios-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-annict4ios-dummy.m"; sourceTree = "<group>"; };
+		A34426FDF77F6EA547087F7C9FFAC0B0 /* Pods-annict4ios.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-annict4ios.modulemap"; sourceTree = "<group>"; };
+		A448C8FCE17CC1196689299DDA2D6F47 /* Pods-annict4ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-annict4ios.release.xcconfig"; sourceTree = "<group>"; };
+		B0F654B896C583FF09D69688BBE265B2 /* AnnictAPIClient-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AnnictAPIClient-dummy.m"; sourceTree = "<group>"; };
+		B344C73C0E5CB701CC91E0045489D446 /* Profile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Profile.swift; path = AnnictAPIClient/Profile.swift; sourceTree = "<group>"; };
+		B5C904FD8D7D28E0C2022038308019C4 /* AnnictAPIClient-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AnnictAPIClient-umbrella.h"; sourceTree = "<group>"; };
+		B71D17BEC77C9570BF826C06F22C9324 /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = AnnictAPIClient/HTTPMethod.swift; sourceTree = "<group>"; };
+		B73A7217B4CBD9164EA0935F4253F319 /* AnnictAPIClient.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AnnictAPIClient.modulemap; sourceTree = "<group>"; };
+		B93955DE121BDD825B75CCDA2E23C7BF /* MyWork.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MyWork.swift; path = AnnictAPIClient/MyWork.swift; sourceTree = "<group>"; };
+		C4FD75CE7C0F501AA17838AA3AA15C38 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAB23A23265F038CC407517223A61446 /* Activity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Activity.swift; path = AnnictAPIClient/Activity.swift; sourceTree = "<group>"; };
+		D292A7D23BAB14F3CECF82E4661FAA93 /* UpdateStatusResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UpdateStatusResponse.swift; path = AnnictAPIClient/UpdateStatusResponse.swift; sourceTree = "<group>"; };
+		D787D9396929298D886977F40156D084 /* Pods-annict4ios-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-annict4ios-resources.sh"; sourceTree = "<group>"; };
+		D95D1BE41BBBEAC07CA4806BDA40371B /* Episode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Episode.swift; path = AnnictAPIClient/Episode.swift; sourceTree = "<group>"; };
+		E5F563253D12030541E7CEC07F564FA9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0B9BCB49AD92FA6844829F73FD70EDB /* AnnictAPIError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnnictAPIError.swift; path = AnnictAPIClient/AnnictAPIError.swift; sourceTree = "<group>"; };
+		F4216FC00ACB9537F59A3FA98C6E119C /* Status.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Status.swift; path = AnnictAPIClient/Status.swift; sourceTree = "<group>"; };
+		FB3EDD2DEF83A0A4A0C6E85F2294AEB4 /* JSONDecodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONDecodable.swift; path = AnnictAPIClient/JSONDecodable.swift; sourceTree = "<group>"; };
+		FB53C5C7EE3E556EBE9030F3E6805DD2 /* Pods-annict4ios-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-annict4ios-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B881C1D2F4576D1EC3F008B0D9539E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85E62AD34133969D464D815C928868D7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56B0F131AA0D26AEBCFC3870FF488F82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6359565E1A8AFAA7AC85DD29F273077E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02FC37FF66C9B51685163D92E041CA42 /* Pods-annict4ios */ = {
+			isa = PBXGroup;
+			children = (
+				E5F563253D12030541E7CEC07F564FA9 /* Info.plist */,
+				A34426FDF77F6EA547087F7C9FFAC0B0 /* Pods-annict4ios.modulemap */,
+				000BE2E4F26E1919B9E808FDFA9CF65A /* Pods-annict4ios-acknowledgements.markdown */,
+				126C4A8EF6BC7589496B9EF5066032C1 /* Pods-annict4ios-acknowledgements.plist */,
+				A1A61B8B401BD988330D3E681784B1F0 /* Pods-annict4ios-dummy.m */,
+				035D3644368960210236F748CAFFAF13 /* Pods-annict4ios-frameworks.sh */,
+				D787D9396929298D886977F40156D084 /* Pods-annict4ios-resources.sh */,
+				FB53C5C7EE3E556EBE9030F3E6805DD2 /* Pods-annict4ios-umbrella.h */,
+				10514B1CE852452006898D471917F945 /* Pods-annict4ios.debug.xcconfig */,
+				A448C8FCE17CC1196689299DDA2D6F47 /* Pods-annict4ios.release.xcconfig */,
+			);
+			name = "Pods-annict4ios";
+			path = "Target Support Files/Pods-annict4ios";
+			sourceTree = "<group>";
+		};
+		51B75FE6A1285054BDF39B54EE1B6131 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				02FC37FF66C9B51685163D92E041CA42 /* Pods-annict4ios */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		554BE988A031F791BE39406E1B3048E7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B73A7217B4CBD9164EA0935F4253F319 /* AnnictAPIClient.modulemap */,
+				75EE93EEA53897562836595BBEE74888 /* AnnictAPIClient.xcconfig */,
+				B0F654B896C583FF09D69688BBE265B2 /* AnnictAPIClient-dummy.m */,
+				8E1ED06473515264A219290F182B25F2 /* AnnictAPIClient-prefix.pch */,
+				B5C904FD8D7D28E0C2022038308019C4 /* AnnictAPIClient-umbrella.h */,
+				C4FD75CE7C0F501AA17838AA3AA15C38 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AnnictAPIClient";
+			sourceTree = "<group>";
+		};
+		6196B877D2E07C36EC34E9B4626173C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1447DDA292735FE8ED6EE1E08D9D2395 /* AnnictAPIClient.framework */,
+				96B28CCFFA626A94D015E52112134B11 /* Pods_annict4ios.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				D3E7BEC90F8CB4031BDBD405DDA2A92C /* Pods */,
+				6196B877D2E07C36EC34E9B4626173C4 /* Products */,
+				51B75FE6A1285054BDF39B54EE1B6131 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8958777BB74B1D0BE306159FC8BE88DB /* AnnictAPIClient */ = {
+			isa = PBXGroup;
+			children = (
+				CAB23A23265F038CC407517223A61446 /* Activity.swift */,
+				85D85056113AE7C0EFC729244E165050 /* AnnictAPI.swift */,
+				F0B9BCB49AD92FA6844829F73FD70EDB /* AnnictAPIError.swift */,
+				1B76434F8FFF0519A8D328D7DA94C17D /* AnnictClient.swift */,
+				77403A594C7F96029EC63A24F6AD3187 /* AnnictClientError.swift */,
+				9574AB01E1E683A040785077BE4C8783 /* AnnictRequest.swift */,
+				86D94D97EC035F2B093FABF38D854EBF /* Channel.swift */,
+				08B9BEC4978E989A884CFECE56AB3E75 /* CreateRecordResponse.swift */,
+				D95D1BE41BBBEAC07CA4806BDA40371B /* Episode.swift */,
+				B71D17BEC77C9570BF826C06F22C9324 /* HTTPMethod.swift */,
+				FB3EDD2DEF83A0A4A0C6E85F2294AEB4 /* JSONDecodable.swift */,
+				85EEE7C18A3C1A8FF8A13D641B60DF52 /* JSONDecodeError.swift */,
+				B93955DE121BDD825B75CCDA2E23C7BF /* MyWork.swift */,
+				B344C73C0E5CB701CC91E0045489D446 /* Profile.swift */,
+				54B189F803BD7320A623714692D1DA0F /* Program.swift */,
+				4D8C5DE083773E5D8F35AF1B79B8E11F /* Record.swift */,
+				925662DBE3AE5902315B43BECC10CDAC /* Result.swift */,
+				516DA615982306E3830F5EEA3758AC8A /* SearchActivitiesResponse.swift */,
+				0F5DDB433F7D4662F15F6D59BED4635A /* SearchEpisodesResponse.swift */,
+				159C9567C5E8A32A3DBD49911AEF25D5 /* SearchMyWorksResponse .swift */,
+				24469025DADAE90B61187C985195D38E /* SearchProgramResponse.swift */,
+				870584A91B0CDF37263DD95AFA927302 /* SearchRecordsResponse.swift */,
+				63A0E16BA3244BB9BD20376272604A7E /* SearchUsersResponse.swift */,
+				3A2C60D46E9D53A1BC2BD68602E8B81F /* SearchWorksResponse.swift */,
+				F4216FC00ACB9537F59A3FA98C6E119C /* Status.swift */,
+				D292A7D23BAB14F3CECF82E4661FAA93 /* UpdateStatusResponse.swift */,
+				1592C57A6074B39DF59270F72BF0279D /* User.swift */,
+				83945FF9E2914E15D21E01AEB4A81816 /* Work.swift */,
+				554BE988A031F791BE39406E1B3048E7 /* Support Files */,
+			);
+			name = AnnictAPIClient;
+			path = AnnictAPIClient;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D3E7BEC90F8CB4031BDBD405DDA2A92C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8958777BB74B1D0BE306159FC8BE88DB /* AnnictAPIClient */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2AEF7CF52EB1DFFEE89F780922333C57 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42ED5C8C2044099B5E6A2894DB88C705 /* Pods-annict4ios-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B6A763636E92D1F6516D71BFB49974D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA36253A8F1AF6DC31BD22F531119056 /* AnnictAPIClient-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C8B495100FDEC46677F70266217DF986 /* AnnictAPIClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BFD2AF287D14AF7C11DC9B42148C298 /* Build configuration list for PBXNativeTarget "AnnictAPIClient" */;
+			buildPhases = (
+				D9BA3E66A7E583FC359FBEDBDE7D2185 /* Sources */,
+				4B881C1D2F4576D1EC3F008B0D9539E2 /* Frameworks */,
+				4B6A763636E92D1F6516D71BFB49974D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AnnictAPIClient;
+			productName = AnnictAPIClient;
+			productReference = 1447DDA292735FE8ED6EE1E08D9D2395 /* AnnictAPIClient.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FED08553459D2D0386AE16FE3F8F82FA /* Pods-annict4ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E20CA568E2B93063D0C3AD4F3020AD2 /* Build configuration list for PBXNativeTarget "Pods-annict4ios" */;
+			buildPhases = (
+				D8E7EBE5D5AD3E49E100324E9F640111 /* Sources */,
+				56B0F131AA0D26AEBCFC3870FF488F82 /* Frameworks */,
+				2AEF7CF52EB1DFFEE89F780922333C57 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4A21D7319B0B949199B03D725D981BB /* PBXTargetDependency */,
+			);
+			name = "Pods-annict4ios";
+			productName = "Pods-annict4ios";
+			productReference = 96B28CCFFA626A94D015E52112134B11 /* Pods_annict4ios.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 6196B877D2E07C36EC34E9B4626173C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C8B495100FDEC46677F70266217DF986 /* AnnictAPIClient */,
+				FED08553459D2D0386AE16FE3F8F82FA /* Pods-annict4ios */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8E7EBE5D5AD3E49E100324E9F640111 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53FD7B50FD33061A893E6BDE5A3805EB /* Pods-annict4ios-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9BA3E66A7E583FC359FBEDBDE7D2185 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BD049EDA8AD734F6AC6024A396E00CD /* Activity.swift in Sources */,
+				840E1AE38EED2CF4134ADC6C52FC9773 /* AnnictAPI.swift in Sources */,
+				E4C5F5F1F269896610ABD779A153B8FA /* AnnictAPIClient-dummy.m in Sources */,
+				4BB5F6EF8917565494443647A714A569 /* AnnictAPIError.swift in Sources */,
+				E95989FE908301E2D2A9DB7210613272 /* AnnictClient.swift in Sources */,
+				D96BAF888C7EB83CADD336AEB533AC57 /* AnnictClientError.swift in Sources */,
+				F6857F7EC948115D3865F11032672DAC /* AnnictRequest.swift in Sources */,
+				304358640583D70B178824C74E5C9EEA /* Channel.swift in Sources */,
+				912BDD16EFDBFA53A88C47F84376A220 /* CreateRecordResponse.swift in Sources */,
+				385B470B4BDA60E69EE14FEE24C9930D /* Episode.swift in Sources */,
+				6730750733AC2A709279EA16522C7FF3 /* HTTPMethod.swift in Sources */,
+				A5CCD2F575A0526E03FAA5510ADD2FD8 /* JSONDecodable.swift in Sources */,
+				E4B7DCD3B0529B9FD15C84923F7173EC /* JSONDecodeError.swift in Sources */,
+				3FD744E12CE691B22049600732C76397 /* MyWork.swift in Sources */,
+				EB9F7682A5CEDBE806A573FE9F1DF9DA /* Profile.swift in Sources */,
+				12C946EABDF7F0CBF7A13E41365CBCF4 /* Program.swift in Sources */,
+				82958A51AD52693208D035944C761587 /* Record.swift in Sources */,
+				D618ABE78E506432239518DCA1A4AF56 /* Result.swift in Sources */,
+				CC2F6963CE0638C28CF35101CF6565EA /* SearchActivitiesResponse.swift in Sources */,
+				B1E53B05F32FFFEFC527CCD909685FDF /* SearchEpisodesResponse.swift in Sources */,
+				9E158185560B33181D79208DF92DC12A /* SearchMyWorksResponse .swift in Sources */,
+				F0107FC992EF9FE88A99058E54600DD4 /* SearchProgramResponse.swift in Sources */,
+				1772E2C3249D6206AA519AFBF41D429F /* SearchRecordsResponse.swift in Sources */,
+				9D35254110E6C2319FCE6BCC38EDBD05 /* SearchUsersResponse.swift in Sources */,
+				7CFDACE41A40FC363EE88C36DDE4424C /* SearchWorksResponse.swift in Sources */,
+				521CACFB4754AE8686BD96B9A7AC24AC /* Status.swift in Sources */,
+				56450EF9FD4946A7040DFF6552D9113E /* UpdateStatusResponse.swift in Sources */,
+				0814017F7B5D9CFECFA7355E2DE1C8BD /* User.swift in Sources */,
+				EF51D9AD0BAAE0F3C5F8868448A7B173 /* Work.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A4A21D7319B0B949199B03D725D981BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AnnictAPIClient;
+			target = C8B495100FDEC46677F70266217DF986 /* AnnictAPIClient */;
+			targetProxy = 21CD9ACBE7EB4FE6AAB7F5A3AEAF820C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2C7D75FCA5B5943F026B62C81E45C534 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A448C8FCE17CC1196689299DDA2D6F47 /* Pods-annict4ios.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-annict4ios/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-annict4ios/Pods-annict4ios.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_annict4ios;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4E487F173E6C9664F4E9E26B9635D23C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		6FBC9DBFE80C0B6C95D54CF7B1B4AB1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75EE93EEA53897562836595BBEE74888 /* AnnictAPIClient.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AnnictAPIClient/AnnictAPIClient-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AnnictAPIClient/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AnnictAPIClient/AnnictAPIClient.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AnnictAPIClient;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		909B9891A34BE9612C4288E429A46164 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10514B1CE852452006898D471917F945 /* Pods-annict4ios.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-annict4ios/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-annict4ios/Pods-annict4ios.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_annict4ios;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BDD0139D6EB93FA375F887ABD62DAB2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D801719CC9C6E679F1F5756581541354 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75EE93EEA53897562836595BBEE74888 /* AnnictAPIClient.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AnnictAPIClient/AnnictAPIClient-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AnnictAPIClient/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AnnictAPIClient/AnnictAPIClient.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AnnictAPIClient;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E487F173E6C9664F4E9E26B9635D23C /* Debug */,
+				BDD0139D6EB93FA375F887ABD62DAB2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BFD2AF287D14AF7C11DC9B42148C298 /* Build configuration list for PBXNativeTarget "AnnictAPIClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D801719CC9C6E679F1F5756581541354 /* Debug */,
+				6FBC9DBFE80C0B6C95D54CF7B1B4AB1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E20CA568E2B93063D0C3AD4F3020AD2 /* Build configuration list for PBXNativeTarget "Pods-annict4ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				909B9891A34BE9612C4288E429A46164 /* Debug */,
+				2C7D75FCA5B5943F026B62C81E45C534 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

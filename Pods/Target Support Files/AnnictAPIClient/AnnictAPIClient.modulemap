@@ -1,0 +1,6 @@
+framework module AnnictAPIClient {
+  umbrella header "AnnictAPIClient-umbrella.h"
+
+  export *
+  module * { export * }
+}

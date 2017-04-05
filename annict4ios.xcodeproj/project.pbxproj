@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07D909C3C797728377184688 /* Pods_annict4ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABADD9A307A16D232B57AF5A /* Pods_annict4ios.framework */; };
 		44A99D371E9361DE00CF1C30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A99D361E9361DE00CF1C30 /* AppDelegate.swift */; };
 		44A99D391E9361DE00CF1C30 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A99D381E9361DE00CF1C30 /* FirstViewController.swift */; };
 		44A99D3B1E9361DE00CF1C30 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A99D3A1E9361DE00CF1C30 /* SecondViewController.swift */; };
@@ -24,6 +25,9 @@
 		44A99D3F1E9361DE00CF1C30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44A99D421E9361DE00CF1C30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44A99D441E9361DE00CF1C30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABADD9A307A16D232B57AF5A /* Pods_annict4ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_annict4ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0AE351459290F4917E9ABC4 /* Pods-annict4ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-annict4ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-annict4ios/Pods-annict4ios.debug.xcconfig"; sourceTree = "<group>"; };
+		D4FDE38C22C63072BF40FB67 /* Pods-annict4ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-annict4ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-annict4ios/Pods-annict4ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07D909C3C797728377184688 /* Pods_annict4ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				44A99D351E9361DE00CF1C30 /* annict4ios */,
 				44A99D341E9361DE00CF1C30 /* Products */,
+				C92567B530A6CF96ADF80477 /* Pods */,
+				75D1549E5EF594B4FD300F06 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,23 @@
 			path = annict4ios;
 			sourceTree = "<group>";
 		};
+		75D1549E5EF594B4FD300F06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABADD9A307A16D232B57AF5A /* Pods_annict4ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C92567B530A6CF96ADF80477 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0AE351459290F4917E9ABC4 /* Pods-annict4ios.debug.xcconfig */,
+				D4FDE38C22C63072BF40FB67 /* Pods-annict4ios.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44A99D471E9361DE00CF1C30 /* Build configuration list for PBXNativeTarget "annict4ios" */;
 			buildPhases = (
+				F6F2F8DEDE97E9A1E7A20100 /* [CP] Check Pods Manifest.lock */,
 				44A99D2F1E9361DE00CF1C30 /* Sources */,
 				44A99D301E9361DE00CF1C30 /* Frameworks */,
 				44A99D311E9361DE00CF1C30 /* Resources */,
+				4ABCE5AD41CA53FC98E90736 /* [CP] Embed Pods Frameworks */,
+				3F5BE7675127A63DEEAB912E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,6 +160,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F5BE7675127A63DEEAB912E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-annict4ios/Pods-annict4ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4ABCE5AD41CA53FC98E90736 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-annict4ios/Pods-annict4ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6F2F8DEDE97E9A1E7A20100 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		44A99D2F1E9361DE00CF1C30 /* Sources */ = {
@@ -262,6 +337,7 @@
 		};
 		44A99D481E9361DE00CF1C30 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0AE351459290F4917E9ABC4 /* Pods-annict4ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = annict4ios/Info.plist;
@@ -274,6 +350,7 @@
 		};
 		44A99D491E9361DE00CF1C30 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4FDE38C22C63072BF40FB67 /* Pods-annict4ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = annict4ios/Info.plist;

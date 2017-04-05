@@ -1,0 +1,6 @@
+framework module Pods_annict4ios {
+  umbrella header "Pods-annict4ios-umbrella.h"
+
+  export *
+  module * { export * }
+}
