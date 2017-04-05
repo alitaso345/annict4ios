@@ -8,7 +8,9 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class FirstViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+
+    var episodeList: [String] = ["クズの本懐", "幼女戦記", "小林さんちのメイドラゴン"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +20,19 @@ class FirstViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+
+    //テーブルの行数を追加する
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return episodeList.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "episodeCell", for: indexPath)
+
+        let episodeTitle = episodeList[indexPath.row]
+        cell.textLabel?.text = episodeTitle
+        return cell
     }
 
 
